@@ -1,0 +1,16 @@
+PODS:
+  - SLDate (0.2.0)
+
+DEPENDENCIES:
+  - SLDate
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - SLDate
+
+SPEC CHECKSUMS:
+  SLDate: ee639cc21823ddfd317b69e6b81854a32dfd9ad1
+
+PODFILE CHECKSUM: ccd7e991be256f31806f259845f05b732fd1ee6a
+
+COCOAPODS: 1.5.0
