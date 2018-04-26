@@ -3,6 +3,8 @@
 [//]: #[![Version](https://img.shields.io/cocoapods/v/SLDate.svg?style=flat)](https://cocoapods.org/pods/SLDate)
 [//]: #[![License](https://img.shields.io/cocoapods/l/SLDate.svg?style=flat)](https://cocoapods.org/pods/SLDate)
 [//]: #[![Platform](https://img.shields.io/cocoapods/p/SLDate.svg?style=flat)](https://cocoapods.org/pods/SLDate)
+[//]: #[参考链接1](https://www.jianshu.com/p/e744b56d57ea)
+[//]: #[参考链接2](https://www.jianshu.com/p/17e0b0b1f737)
 
 ### 通过`pod lib`命令创建项目
 
