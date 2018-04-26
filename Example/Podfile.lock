@@ -1,0 +1,16 @@
+PODS:
+  - SLDate (0.1.0)
+
+DEPENDENCIES:
+  - SLDate (from `../`)
+
+EXTERNAL SOURCES:
+  SLDate:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SLDate: bfc32489a939dee2b47897c071ab044ba676e5e5
+
+PODFILE CHECKSUM: a3a220c4b6da6683ced5e274beaa34235def6e1b
+
+COCOAPODS: 1.5.0

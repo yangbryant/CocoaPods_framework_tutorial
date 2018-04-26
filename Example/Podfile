@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SLDate_Example' do
+  pod 'SLDate', :path => '../'
+
+  target 'SLDate_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
