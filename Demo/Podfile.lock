@@ -1,5 +1,5 @@
 PODS:
-  - SLDate (0.2.0)
+  - SLDate (0.2.1)
 
 DEPENDENCIES:
   - SLDate
@@ -9,7 +9,7 @@ SPEC REPOS:
     - SLDate
 
 SPEC CHECKSUMS:
-  SLDate: ee639cc21823ddfd317b69e6b81854a32dfd9ad1
+  SLDate: 2a6e528de5d016dde3179f37a333fb6c7c67dfb4
 
 PODFILE CHECKSUM: ccd7e991be256f31806f259845f05b732fd1ee6a
 

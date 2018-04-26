@@ -106,6 +106,83 @@ pod package SLDate.podspec --force # 打包成framework
 
 ![7_pod_package](_ScreenShots/7_pod_package.png)
 
+### 生成framework外链
+
+* 压缩framework成`zip`包, 上传生成外链.
+
+![8_create_framework_url](_ScreenShots/8_create_framework_url.png)
+
+### 编辑 `*.PodSpec` 文件
+
+* _注意_: 此podspec文件是打包后的podspec文件,不是创建项目的那个.
+
+```CocoaPods
+Pod::Spec.new do |s|
+  s.name = "SLDate"
+  s.version = "0.2.0"
+  s.summary = "SLDate is a NSDate Category."
+  s.license = {"type"=>"MIT", "file"=>"LICENSE"}
+  s.authors = {"Srefan"=>"liyangkobebryant@hotmail.com"}
+  s.homepage = "https://github.com/yangbryant/CocoaPods_framework_tutorial"
+  s.description = "TODO: Add long description of the pod here."
+  s.frameworks = "UIKit"
+  s.source = { :http => 'https://github.com/yangbryant/CocoaPods_framework_tutorial/releases/download/0.2.0/SLDate.zip' }
+  s.platform = :ios
+
+  s.ios.deployment_target    = '8.0'
+  s.ios.vendored_framework   = 'SLDate.framework'
+end
+```
+
+### Lint PodSpec文件的规则
+
+* 同样要 `Lint` 下规则, 还是打包后的文件.
+
+```shell
+cd SLDate-0.2.0/
+pod spec lint SLDate.podspec --allow-warnings
+```
+
+### 提交到 `Pod`
+
+```shell
+pod trunk push --allow-warnings
+```
+
+![9_pod_trunk_push](_ScreenShots/9_pod_trunk_push.png)
+
+### 搜索我的库
+
+```
+pod search SLDate
+```
+
+![10_pod_search](_ScreenShots/10_pod_search.png)
+
+### 创建`Demo`项目,用`Pod`导入库
+
+* `pod init`创建 `PodFile`文件
+
+```CocoaPods
+# Uncomment the next line to define a global platform for your project
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+use_frameworks!
+inhibit_all_warnings!
+
+target 'Demo' do
+pod 'SLDate'
+end
+```
+
+![11_pod_install](_ScreenShots/11_pod_install.png)
+
+### 项目中调用
+
+![12_project_code](_ScreenShots/12_project_code.png)
+
+### OK, 成功了, Finished!
+
 
 ## License
 
