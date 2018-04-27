@@ -145,6 +145,8 @@ cd SLDate-0.2.0/
 pod spec lint SLDate.podspec --allow-warnings
 ```
 
+> `pod spec` 相对于 `pod lib` 会更为精确, `pod lib` 相当于只验证一个本地仓库, `pod spec` 会同时验证本地仓库和远程仓库.
+
 ### 提交到 `Pod`
 
 ```shell
