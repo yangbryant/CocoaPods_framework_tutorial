@@ -68,6 +68,11 @@ pod lib lint SLDate.podspec --allow-warnings
 ```
 
 * `--allow-warnings` 忽略警告信息
+
+> `--only-errors`和`--allow-warnings`区别  
+> `--allow-warnings`是允许warning的存在, 也就是说当你在`pod lib lint`验证podspec的时候, 有警告也能验证通过.  
+> `--only-errors`是只显示出错误, 就是你在验证的时候就算`--allow-warnings`, 但是那些warnings也还是会打印出来和errors混杂在一起, 这会让你很难找error. 所以这里使用`--only-errors`来只打印error,不打印warning.
+
 * `--use-libraries` 针对引用依赖了第三方Pod库
 
 ![4_pod_lib_lint](_ScreenShots/4_pod_lib_lint.png)
