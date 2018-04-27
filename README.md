@@ -53,7 +53,8 @@ TODO: Add long description of the pod here.
     'SLDate' => ['SLDate/Assets/*.png']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  # 只开放SLCategory头文件,隐藏SLBase头文件
+  s.public_header_files = 'SLDate/Classes/NSDate+SLCategory.h'
   s.frameworks = 'UIKit'
   
   # 如果你的库使用了其他第三方库，需要加入
